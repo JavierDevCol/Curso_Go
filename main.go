@@ -1,9 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"goDesdeCero/variables"
 )
 
 func main() {
-	variables.MuestroEnteros()
+	estado, texto := variables.CovnertirEnteroToString(6700000)
+	fmt.Println(estado)
+	fmt.Println(texto)
 }
