@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"goDesdeCero/condicionales"
 	"goDesdeCero/ejercicios"
+	"goDesdeCero/teclado"
 	"goDesdeCero/variables"
 	"runtime"
 )
@@ -14,4 +15,5 @@ func main() {
 	fmt.Println(texto)
 	fmt.Println(condicionales.EsWindows(runtime.GOOS))
 	fmt.Println(ejercicios.StringToInt("19u"))
+	teclado.IngresoNumero()
 }
