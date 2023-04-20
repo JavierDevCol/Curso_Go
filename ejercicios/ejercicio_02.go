@@ -7,7 +7,9 @@ import (
 	"strconv"
 )
 
-func TablaMultiplicar() {
+var text string
+
+func TablaMultiplicar() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	for {
 		fmt.Println("Ingrese numero: ")
@@ -17,8 +19,9 @@ func TablaMultiplicar() {
 				continue
 			}
 			for i := 1; i < 11; i++ {
-				fmt.Println(numero, " X ", i, " = ", numero*i)
+				text += fmt.Sprintln(numero, " X ", i, " = ", numero*i)
 			}
+			text += fmt.Sprintln("-----------------------------------")
 			fmt.Println("desea ingresar otro numero? (Y/N)")
 			if scanner.Scan() {
 				if scanner.Text() == "N" || scanner.Text() == "n" {
@@ -27,4 +30,5 @@ func TablaMultiplicar() {
 			}
 		}
 	}
+	return text
 }

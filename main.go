@@ -1,7 +1,7 @@
 package main
 
 import (
-	"goDesdeCero/ejercicios"
+	"goDesdeCero/file"
 )
 
 func main() {
@@ -13,5 +13,8 @@ func main() {
 	// teclado.IngresoNumero()
 
 	// iteraciones.IterarCOndicionSaltosBreakContinue()
-	ejercicios.TablaMultiplicar()
+	// ejercicios.TablaMultiplicar()
+	// file.CrearArchivoConTablaMultiplicar()
+	// file.AgregarTablaAlArchivo()\
+	file.LeoArchivo()
 }
